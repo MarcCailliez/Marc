@@ -80,7 +80,7 @@ let count = 0;
 let tableau = [];
 
 while (true) {
-    let n = parseFloat(window.prompt("Entrez une valeur numérique (" + (count + 1) + "/saisie stoppée à 0) :"));
+    let n = parseFloat(window.prompt("Entrez une valeur numérique (" + (count + 1) + "/saisie stoppée à 0) :"));ersfdgh,
 
     if (isNaN(n) || n === 0) {
         break;
