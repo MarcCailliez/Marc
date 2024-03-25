@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Premier formulaire</title>
+</head>
+
+<body>
+  <p>*Ces zones sont obligatoires</p>
+  <form action="http://bienvu.net/script.php" method="post">
+    <fieldset>
+      <legend>Vos Coordonnées</legend>
+      <label for="Votre nom*">Votre nom*:</label><input type="text" name="Votre nom*" id="Votre nom*"><br>
+      <label for="Votre pénom*">Votre prénom*:</label><input type="text" name="Votre prénom*" id="Votre prénom"><br>
+      <br>
+      <label for="Sexe*">Sexe*</label><input type="radio" name="Féminin" value="Féminin">Féminin
+      <input type="radio" name="Masculin" value="Masculin">Masculin
+      <br>
+      <label for="date">Date de naissance*</label><input type="date" name="ddn" id="date"><br>
+      <label for="Code postal*">Code postal*:</label><input type="text" name="Code postal*" id="Code postal*"><br>
+      <label for="Adresse">Adresse:</label><input type="text" name="Adresse" id="Adresse"><br>
+      <label for="Ville">Ville:</label><input type="text" name="Ville" id="Ville"><br>
+      <label for="Email*">Email*:</label><input type="text" name="Email*" id="Email*"><br>
+      <br>
+    </fieldset>
+    <fieldset>
+      <legend>Votre demande</legend>
+      <label for="Sujet*">Sujet*:</label>
+      <select id="Sujet*">
+        <option value="Veuillez séléctionner un sujet" selected>Veuillez séléctionner un sujet</option>
+        <option value="Mes commandes">Mes commandes</option>
+        <option value="Question sur un produit">Question sur un produit</option>
+        <option value="Réclamation">Réclamation</option>
+        <option value="Autres">Autres</option>
+      </select>
+      <br>
+      <label for="Votre Question*">Votre Question*:</label><input type="text" name="Votre Question*"
+        id="Votre Question*"><br>
+    </fieldset>
+    <input type="checkbox" name="formulaire" value="acceptation formulaire" checked> * J'accepte le traitement
+    informatique de ce formulaire <br>
+    <input class="styled" type="button" value="Envoyer">
+    <input class="styled" type="button" value="Annuler">
+  </form>
+</body>
+
+</html>

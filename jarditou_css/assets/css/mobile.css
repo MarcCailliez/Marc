@@ -1,0 +1,9 @@
+/* le responsive mobile */
+
+@media screen and (max-width:576px) {
+
+  .table {
+    width: 70%;
+    height: auto;
+  }
+}
