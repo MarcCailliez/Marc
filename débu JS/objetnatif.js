@@ -93,6 +93,7 @@ while (true) {
 
 if (count > 0) {
     console.log("Vous avez saisi " + count + " valeur(s) :");
+    console.log(tableau);
     console.log("Somme : " + sum);
     console.log("Moyenne : " + (sum / count));
 } else {
