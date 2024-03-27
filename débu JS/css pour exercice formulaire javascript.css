@@ -1,0 +1,17 @@
+/* css pour exercice formulaire javascript */
+
+#legend { 
+   color: rgb(160, 13, 13);
+}
+
+#bouton {
+    text-align: center;
+
+}
+
+#roulette {
+  
+float: inline-end;
+height: 1000 px;
+
+}

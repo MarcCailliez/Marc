@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercie Formulaire avec Javascript</title>
+    <link rel="stylesheet" href="css pour exercice formulaire javascript.css">
+</head>
+<body>
+    <h2>Vos coordonnées</h2>
+    <form action=""   method="post"  id="contactForm">
+    <fieldset>
+        <legend id="legend"> * Ces zones sont obligatoires pour envoyer le formulaire</legend><br>
+        <label for="nom">Société:</label><input type="text" name="Société" id="societe"> * <br><br>
+        <label for="nom">Persone à contacter:</label><input type="text" name="Persone à contacter" id="personne"> * <br><br>
+
+        <label for="nom">Adresse de l'entreprise:</label><input type="text" name="Adresse de l'entreprise" id="defile"><br><br>
+
+        <label for="nom">Code Postal:</label><input type="text" name="Code Postal" id="codepostal"> * <br><br>
+        <label for="nom">Ville:</label><input type="text" name="Ville" id="ville"> * <br><br>
+        <label for="nom">E-mail:</label><input type="text" name="E-mail" id="email"> * <br><br>
+        <label for="nom">Téléphone : </label><input type="text" name="Téléphone" id="tel"><br><br>
+        <label for="Sujet">Sélectionnez l'environnement technique du projet:</label> 
+        <select id="Sujet">
+            <option value="Sélectionnez l'environnement technique du projet" selected>Choississez</option>
+            <option value="Accesse">Accesse</option>
+            <option value="Java">Java</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="Visual Basic">Visual Basic</option>
+            <option value="Power Builder">Power Builder</option>
+            <option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+            <option value="Windows NT">Windows NT</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL Server">SQL Server</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Autres...">Autres...</option>
+            </select>
+            <textarea id="roulette"  type="texte" name="roulette" cols="20" rows="10"></textarea>
+            <br><br>
+            <div id="bouton"><input class="styled" type="button" value="Envoyer" onclick="verif()">
+            <input class="styled" type="button" value="Effacer" onclick="efface()" ></div>
+            </fieldset>
+    </form>
+    <script src="exercieformulaire.js"></script>
+</body>
+</html>
