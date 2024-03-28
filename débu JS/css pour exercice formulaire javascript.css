@@ -1,17 +1,45 @@
 /* css pour exercice formulaire javascript */
 
-#legend { 
+.legend { 
+
    color: rgb(160, 13, 13);
+
 }
 
 #bouton {
+
     text-align: center;
 
 }
 
-#roulette {
-  
-float: inline-end;
+/* #roulette {
+  display: block;
+ float:right;
 height: 1000 px;
+
+} */
+
+#asterix{
+
+  color: red;
+
+}
+
+label {
+
+  margin-bottom: 25px;
+  display: inline-block;
+
+}
+
+
+.error {
+
+  color: red;
+}
+
+.alertcolor {
+
+  color: green;
 
 }

@@ -6,22 +6,23 @@
     <link rel="stylesheet" href="css pour exercice formulaire javascript.css">
 </head>
 <body>
-    <h2>Vos coordonnées</h2>
-    <form action=""   method="post"  id="contactForm">
-    <fieldset>
-        <legend id="legend"> * Ces zones sont obligatoires pour envoyer le formulaire</legend><br>
-        <label for="nom">Société:</label><input type="text" name="Société" id="societe"> * <br><br>
-        <label for="nom">Persone à contacter:</label><input type="text" name="Persone à contacter" id="personne"> * <br><br>
+    <h2>Vos coordonnées</h2><br><br>
 
+       <p class="legend"> <span id="asterix"> * </span> Ces zones sont obligatoires pour envoyer le formulaire</p>
+    <br> <br>
+    <form action=""   method="post"  id="contactForm" >
+    <!-- <fieldset> -->
+        <!-- <legend id="legend"> <div id="asterix"> * </div> Ces zones sont obligatoires pour envoyer le formulaire</legend><br> -->
+        <label for="nom">Société:</label><input type="text" name="Société" id="societe"> <span id="asterix"> * </span> <br><br>
+        <label for="nom">Persone à contacter:</label><input type="text" name="Persone à contacter" id="personne"> <span id="asterix">*</span> <br><br>
         <label for="nom">Adresse de l'entreprise:</label><input type="text" name="Adresse de l'entreprise" id="defile"><br><br>
-
-        <label for="nom">Code Postal:</label><input type="text" name="Code Postal" id="codepostal"> * <br><br>
-        <label for="nom">Ville:</label><input type="text" name="Ville" id="ville"> * <br><br>
-        <label for="nom">E-mail:</label><input type="text" name="E-mail" id="email"> * <br><br>
-        <label for="nom">Téléphone : </label><input type="text" name="Téléphone" id="tel"><br><br>
+        <label for="nom">Code Postal:</label><input type="text" name="Code Postal" id="codepostal"> <span id="asterix">*</span> <br><br>
+        <label for="nom">Ville:</label><input type="text" name="Ville" id="ville"> <span id="asterix">*</span> <br><br>
+        <label for="nom">E-mail:</label><input type="text" name="E-mail" id="email"> <span id="asterix">*</span> <br><br>
+        <label for="nom">Téléphone : </label><input type="text" name="Téléphone" id="tel"><span id="asterix">*</span><br><br>
         <label for="Sujet">Sélectionnez l'environnement technique du projet:</label> 
         <select id="Sujet">
-            <option value="Sélectionnez l'environnement technique du projet" selected>Choississez</option>
+            <option value="" disabled selected>Choississez</option>
             <option value="Accesse">Accesse</option>
             <option value="Java">Java</option>
             <option value="Delphi">Delphi</option>
@@ -36,11 +37,11 @@
             <option value="Oracle">Oracle</option>
             <option value="Autres...">Autres...</option>
             </select>
-            <textarea id="roulette"  type="texte" name="roulette" cols="20" rows="10"></textarea>
+            <input id="roulette"  type="texte" name="roulette">
             <br><br>
             <div id="bouton"><input class="styled" type="button" value="Envoyer" onclick="verif()">
             <input class="styled" type="button" value="Effacer" onclick="efface()" ></div>
-            </fieldset>
+           <!--  </fieldset> -->
     </form>
     <script src="exercieformulaire.js"></script>
 </body>

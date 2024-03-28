@@ -11,8 +11,8 @@ function verif() {
   const cp = document.getElementById("codepostal");
   const ville = document.getElementById("ville");
   const email = document.getElementById("email");
-  const sujet = document.getElementById("Sujet");
-  /* const roulette = document.getElementById("roulette"); */
+/*   const sujet = document.getElementById("Sujet");
+  const roulette = document.getElementById("roulette"); */
   /* const message = document.getElementById("message"); */
   const telephone = document.getElementById("tel");
 
@@ -23,32 +23,43 @@ function verif() {
   /* Valider les entrées */
 
   if (soc.value.length < 1) {
-    setErrorMessage(soc, "Veuillez entrer le nom de la société.");
+    setErrorMessage(soc, "* Veuillez entrer le nom de la société.");
   }
   if (pers.value.length < 1) {
-    setErrorMessage(pers, "Veuillez entrer le nom de la personne à contacter.");
+    setErrorMessage(pers, "* Veuillez entrer le nom de la personne à contacter.");
   }
   if (cp.value.length !== 5 || !isNumeric(cp.value)) {
-    setErrorMessage(cp, "Le code postal doit comporter exactement 5 chiffres.");
+    setErrorMessage(cp, "* Le code postal doit comporter exactement 5 chiffres.");
   }
   if (ville.value.length < 1) {
-    setErrorMessage(ville, "Veuillez entrer le nom de la ville.");
+    setErrorMessage(ville, "* Veuillez entrer le nom de la ville.");
   }
   if (email.value.indexOf("@" && ".") < 0) {
-    setErrorMessage(email, "Veuillez entrer une adresse email valide.");
+    setErrorMessage(email, "* Veuillez entrer une adresse email valide.");
   }
-  if (sujet.value === "Choisissez") {
-    setErrorMessage(sujet, "Veuillez sélectionner un environnement technique.");
-  }
-  if (isNumeric(telphone.value)){
-        setErrorMessage(telephone, 'Veuillez entrer un numéro de téléphone valide')
+/*   if (sujet.value === "Choisissez") {
+    setErrorMessage(roulette, " ");
+    roulette.value = ''; */
+  /* } */
+  if (!Tel(telephone.value)){
+        setErrorMessage(telephone, ' Veuillez entrer un numéro de téléphone valide')
     }
 
 
   /* Afficher un message de confirmation si aucune erreur n'a été trouvée */
 
   if (document.querySelectorAll(".error").length === 0) {
+    
+    let messagealert = document.createElement("p");
+
+  messagealert.className = "alertcolor";
+
+  messagealert.textContent = "Merci ! Votre formulaire a bien été envoyé."; 
+
+  document.body.appendChild(messagealert);
+ 
     alert( "Merci ! Votre formulaire a bien été envoyé.");
+    alert.className('alertcolor');
   }
 }
 
@@ -79,7 +90,7 @@ function isNumeric(str) {
 
 /* Verifier chiffre numéro de tel */
 function Tel(str2){
-    return str2.match(/* numéro de tel à mettre */ )
+    return str2.match(/^0[1-9]([-.]?\d{2}){4}$/ )
 
 
 }
