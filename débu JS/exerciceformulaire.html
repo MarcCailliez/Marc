@@ -15,7 +15,7 @@
         <!-- <legend id="legend"> <div id="asterix"> * </div> Ces zones sont obligatoires pour envoyer le formulaire</legend><br> -->
         <label for="nom">Société:</label><input type="text" name="Société" id="societe"> <span id="asterix"> * </span> <br><br>
         <label for="nom">Persone à contacter:</label><input type="text" name="Persone à contacter" id="personne"> <span id="asterix">*</span> <br><br>
-        <label for="nom">Adresse de l'entreprise:</label><input type="text" name="Adresse de l'entreprise" id="defile"><br><br>
+        <label for="nom">Adresse de l'entreprise:</label><textarea type="text" name="Adresse de l'entreprise" id="defile"></textarea><br><br>
         <label for="nom">Code Postal:</label><input type="text" name="Code Postal" id="codepostal"> <span id="asterix">*</span> <br><br>
         <label for="nom">Ville:</label><input type="text" name="Ville" id="ville"> <span id="asterix">*</span> <br><br>
         <label for="nom">E-mail:</label><input type="text" name="E-mail" id="email"> <span id="asterix">*</span> <br><br>
@@ -37,7 +37,7 @@
             <option value="Oracle">Oracle</option>
             <option value="Autres...">Autres...</option>
             </select>
-            <input id="roulette"  type="texte" name="roulette">
+            <input id="roulette"  type="texte" name="roulette"> <!-- c'est plus beau que le texte area je trouve  -->
             <br><br>
             <div id="bouton"><input class="styled" type="button" value="Envoyer" onclick="verif()">
             <input class="styled" type="button" value="Effacer" onclick="efface()" ></div>
