@@ -27,7 +27,7 @@
 <hr>
 <div class="Jarditou">
     <div class="texte">
-<form method="post"> <!-- action="http://bienvu.net/script.php" (trouvé ça sur cette ligne mais je ne sais pas d'où ça sort, à chercher)-->
+<form action="" method="post"  id="contactForm"> <!-- action="http://bienvu.net/script.php" (trouvé ça sur cette ligne mais je ne sais pas d'où ça sort, à chercher)-->
     <p>*Ces zones sont obligatoires</p>
     <fieldset>
         <legend>Vos Coordonnées</legend>
@@ -41,7 +41,7 @@
         <label for="postal">Code postal*:</label><input type="text" name="Code postal*" id="postal"><br>
         <label for="Adresse">Adresse:</label><input type="text" name="Adresse" id="Adresse"><br>
         <label for="Ville">Ville:</label><input type="text" name="Ville" id="Ville"><br>
-        <label for="Email*">Email*:</label><input type="text" name="Email*" id="Email*"><br>
+        <label for="nom">Email*:</label><input type="text" name="email*" id="email*"><br>
         <br>
     </fieldset>
     <fieldset>
@@ -57,10 +57,10 @@
         <br>
         <label for="question">Votre Question*:</label><input type="text" name="Votre Question*" id="question"><br>
     </fieldset>
-    <input type="checkbox" name="formulaire" value="acceptation formulaire"> * J'accepte le traitement
+    <input type="checkbox" name="formulaire" id="acceptation" value="acceptation formulaire"> * J'accepte le traitement
     informatique de ce formulaire <br>
-    <input class="styled" type="button" value="Envoyer">
-    <input class="styled" type="button" value="Annuler">
+    <div id="bouton"><input class="styled" type="button" value="Envoyer" onclick="verif()">
+    <input class="styled" type="button" value="Annuler" onclick="efface()"></div>
 </form>
     </div>
     <div class="colonne">[COLONNE DROITE]</div>
@@ -73,6 +73,7 @@
         <li><a href="#">Plan du site</a></li>
     </ul>
 </nav>
+<script src="assets/js/contact.js"></script>
 </body>
 
 </html>

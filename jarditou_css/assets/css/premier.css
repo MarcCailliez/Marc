@@ -124,7 +124,7 @@ th{
 
 form{
 
-    width: 40%;
+    width: 50%;
 
 }
 
@@ -132,3 +132,16 @@ form{
     max-width: 70%;
     height: auto;
 }
+
+.alertcolor {
+
+    color: green;
+  
+  }
+
+  .error {
+
+    color: red;
+  }
+
+ 
