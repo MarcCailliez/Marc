@@ -4,7 +4,7 @@ function verif(){
 
     const name = document.getElementById("nom");
     const firstname = document.getElementById("prenom");
-    const sex = document.getElementById("Sexe*");
+    const sexContainer = document.getElementById("Sexe_*");
     const jour = document.getElementById("date");
     const cp = document.getElementById("postal");
     /* const town = document.getElementById("ville"); */
@@ -17,6 +17,7 @@ function verif(){
 /* effacer message erreur  */
     clearErrorMessages();
 
+
 /* validation des entrées */
 if (name.value.length < 1) {
     setErrorMessage(name, "* Veuillez entrer votre nom.");
@@ -24,40 +25,53 @@ if (name.value.length < 1) {
   if (firstname.value.length < 1) {
     setErrorMessage(firstname, "* Veuillez entrer votre prénom.");
   }
- /*  if (sex.value.length < 1) {
-    setErrorMessage(sex, "* Veuillez séléctionner votre sexe.");
-  } */
+  
+  if (!sexContainer.querySelector('input[name="Sexe*"]:checked')) {
 
-  /*  if (jour.value.length < 8 || !isNumeric(jour.value)) {
-    setErrorMessage(jour, "* Entrez date de naissance valide.");
-  } */
+    setErrorMessage(sexContainer, "* Veuillez sélectionner votre sexe.");
+
+  }
+
+if (jour.value.length < 1) {
+  setErrorMessage(jour, "* Veuillez entrer votre date de naissance.");
+} 
+
   if (cp.value.length !== 5 || !isNumeric(cp.value)) {
     setErrorMessage(cp, "* Entrez un code postal à 5 chiffres.");
   }
- 
+  
+  if (roulette.value === "Veuillez séléctionner un sujet") {
+
+    setErrorMessage(roulette, "* Veuillez sélectionner un sujet.");
+
+  }
   if (commentaire.value.length < 1) {
     setErrorMessage(commentaire, "* Veuillez taper votre question.");
   }
   if (email.value.indexOf("@" && ".") < 0) {
     setErrorMessage(email, "* Veuillez entrer une adresse email valide.");
-  } /* chercher pourquoi cette ligne ne veut pas fonctionner */
+  }
 
+  if (!validation.checked) {
 
+    setErrorMessage(validation, "* Vous devez accepter les conditions.");
+
+  }
 
  /* Afficher un message de confirmation si aucune erreur n'a été trouvée */
 
  if (document.querySelectorAll(".error").length === 0) {
     
-    let messagealert = document.createElement("p");
+    /* let messagealert = document.createElement("p"); */
 
-  messagealert.className = "alertcolor";
+  /* messagealert.className = "alertcolor";
 
-  messagealert.textContent = "Merci ! Votre formulaire a bien été envoyé."; 
+  messagealert.textContent = "Merci ! Votre formulaire a bien été envoyé.";  */
 
-  document.body.appendChild(messagealert);
+  /* document.body.appendChild(messagealert); */
  
     alert( "Merci ! Votre formulaire a bien été envoyé.");
-    alert.className('alertcolor');
+    /* alert.className('alertcolor'); */
   }
 }
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulaire Jarditou</title>
-    <link rel="stylesheet" href="assets/css/premier.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" media="screen and (max-width: 576px)" href="assets/css/mobile.css">
 <!--     <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/tablette.css">
     <link rel="stylesheet" media="screen and (max-width: 992px)" href="assets/css/tablette portrait.css">
@@ -33,15 +33,20 @@
         <legend>Vos Coordonnées</legend>
         <label for="nom">Votre nom*:</label><input type="text" name="Votre nom*" id="nom"><br>
         <label for="prenom">Votre prénom*:</label><input type="text" name="Votre prénom*" id="prenom"><br>
-        <br>
-        <label for="Sexe*">Sexe*</label><input type="radio" name="Féminin" value="Féminin" id="Sexe*">Féminin
-        <input type="radio" name="Masculin" value="Masculin">Masculin
+        <div id="Sexe_*" <p>Sexe* :</p>
+            <input type="radio" id="Femme" name="Sexe*" value="Femme">
+            <label for="Femme">Femme</label>
+            <input type="radio" id="Homme" name="Sexe*" value="Homme">
+            <label for="Homme">Homme</label>
+          </div>
+        <!-- <label for="Sexe*" id="Sexe_*">Sexe</label><input type="radio" name="Féminin" value="Féminin">Féminin
+        <input type="radio" name="Masculin" value="Masculin">Masculin -->
         <br>
         <label for="date">Date de naissance*</label><input type="date" name="ddn" id="date"><br>
         <label for="postal">Code postal*:</label><input type="text" name="Code postal*" id="postal"><br>
         <label for="Adresse">Adresse:</label><input type="text" name="Adresse" id="Adresse"><br>
         <label for="Ville">Ville:</label><input type="text" name="Ville" id="Ville"><br>
-        <label for="nom">Email*:</label><input type="text" name="email*" id="email*"><br>
+        <label for="nom">E-mail:</label><input type="text" name="E-mail" id="email"><br>
         <br>
     </fieldset>
     <fieldset>
